@@ -1,0 +1,11 @@
+contact_us_btn: //*[@title="Contact Us"]
+submit_btn: //*[@id="submitMessage"]  
+subject_dropdown: //[@id="id_contact"]
+email_field: //*[@id="email"] 
+order_field: //*[@id="id_order"] 
+upload_file: //*[@id="uniform-fileUpload"]  
+message_field: //*[@id="message"]   
+send_button: //*[@id="submitMessage"]     
+
+
+

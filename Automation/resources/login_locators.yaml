@@ -1,0 +1,5 @@
+SignIn :   //*[@title="Log in to your customer account"]
+EmailLogin :  //*[@id="email"]        danielsihaloho2@gmail.com
+PassLogin : //*[@id="passwd"]     123456
+Submit_Button :   //*[@id="SubmitLogin"]
+Logout :   //*[@class="logout"]

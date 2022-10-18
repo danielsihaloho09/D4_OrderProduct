@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221019 00:12:24.797" rpa="false" schemaversion="3">
+<suite id="s1" name="Orderbarang" source="C:\Users\DANIEL\Desktop\Automation\Suites\orderbarang.robot">
+<test id="s1-t1" name="Order Barang Test" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221019 00:12:24.972" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221019 00:12:24.971" endtime="20221019 00:12:34.491"/>
+</kw>
+<kw name=" Flow Order Barang">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Log in to your customer account"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:34.493" level="INFO">Clicking link 'xpath=//*[@title="Log in to your customer account"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:34.492" endtime="20221019 00:12:41.769"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="email"]</arg>
+<arg>danielsihaloho2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:41.770" level="INFO">Typing text 'danielsihaloho2@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:41.769" endtime="20221019 00:12:41.853"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath=//*[@id="passwd"]</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:41.853" level="INFO">Typing password into text field 'xpath=//*[@id="passwd"]'.</msg>
+<msg timestamp="20221019 00:12:41.879" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221019 00:12:41.915" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221019 00:12:41.853" endtime="20221019 00:12:41.915"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="SubmitLogin"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:41.915" level="INFO">Clicking element 'xpath=//*[@id="SubmitLogin"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:41.915" endtime="20221019 00:12:46.721"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search_query_top"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 00:12:46.721" endtime="20221019 00:12:46.746"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search_query_top"]</arg>
+<arg>Blouse</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:46.746" level="INFO">Typing text 'Blouse' into text field 'xpath=//*[@id="search_query_top"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:46.746" endtime="20221019 00:12:46.805"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@name="submit_search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:46.806" level="INFO">Clicking element 'xpath=//*[@name="submit_search"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:46.806" endtime="20221019 00:12:50.059"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Add to cart"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:50.059" level="INFO">Clicking element 'xpath=//*[@title="Add to cart"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:50.059" endtime="20221019 00:12:50.098"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Proceed to checkout"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 00:12:50.099" endtime="20221019 00:12:53.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Proceed to checkout"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:53.004" level="INFO">Clicking element 'xpath=//*[@title="Proceed to checkout"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:53.004" endtime="20221019 00:12:56.373"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class="button btn btn-default standard-checkout button-medium"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:56.373" level="INFO">Clicking element 'xpath=//*[@class="button btn btn-default standard-checkout button-medium"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:56.373" endtime="20221019 00:12:58.661"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@name="message"]</arg>
+<arg>Saya tunggu barangnya admin, Terima Kasih</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:58.662" level="INFO">Typing text 'Saya tunggu barangnya admin, Terima Kasih' into text field 'xpath=//*[@name="message"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:58.661" endtime="20221019 00:12:58.739"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@name="processAddress"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:12:58.740" level="INFO">Clicking element 'xpath=//*[@name="processAddress"]'.</msg>
+<status status="PASS" starttime="20221019 00:12:58.739" endtime="20221019 00:13:01.695"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="cgv"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221019 00:13:01.695" endtime="20221019 00:13:01.706"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="cgv"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:13:01.707" level="INFO">Clicking element 'xpath=//*[@id="cgv"]'.</msg>
+<status status="PASS" starttime="20221019 00:13:01.707" endtime="20221019 00:13:01.744"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class="button btn btn-default standard-checkout button-medium"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:13:01.744" level="INFO">Clicking element 'xpath=//*[@class="button btn btn-default standard-checkout button-medium"]'.</msg>
+<status status="PASS" starttime="20221019 00:13:01.744" endtime="20221019 00:13:04.137"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class="bankwire"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:13:04.137" level="INFO">Clicking element 'xpath=//*[@class="bankwire"]'.</msg>
+<status status="PASS" starttime="20221019 00:13:04.137" endtime="20221019 00:13:05.404"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class="button btn btn-default button-medium"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 00:13:05.405" level="INFO">Clicking element 'xpath=//*[@class="button btn btn-default button-medium"]'.</msg>
+<status status="PASS" starttime="20221019 00:13:05.404" endtime="20221019 00:13:09.949"/>
+</kw>
+<status status="PASS" starttime="20221019 00:12:34.492" endtime="20221019 00:13:09.949"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221019 00:13:09.950" endtime="20221019 00:13:12.105"/>
+</kw>
+<status status="PASS" starttime="20221019 00:12:24.971" endtime="20221019 00:13:12.106"/>
+</test>
+<status status="PASS" starttime="20221019 00:12:24.799" endtime="20221019 00:13:12.107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Orderbarang">Orderbarang</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
